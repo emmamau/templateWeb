@@ -13,7 +13,7 @@ exports.get = (req, res) => {
     .then(data => {res.send(data);})
     .catch(err => {
       res.status(400).send({
-        message: "Error retrieving Pollution"
+        message: err.message
       });
     });
 
