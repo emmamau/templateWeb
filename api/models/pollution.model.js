@@ -13,10 +13,10 @@ module.exports = (sequelize, Sequelize) => {
     lieu: {
       type: Sequelize.STRING
     },
-    dateObservation: {
+    date_observation: {
       type: Sequelize.DATE
     },
-    typePollution: {
+    type_pollution: {
       type: Sequelize.STRING
     },
     description: {
@@ -29,12 +29,9 @@ module.exports = (sequelize, Sequelize) => {
     longitude: {
       type: Sequelize.DECIMAL(9,6)
     },
-    imageUrl: {
+    photo_url: {
       type: Sequelize.STRING
     }
-  }, {
-    timestamps: false,
-    tableName: "pollution"
   });
 
   return Pollution;
