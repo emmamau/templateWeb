@@ -1,6 +1,13 @@
 node_modules
+**/node_modules
 dist
+**/dist
+front
 .git
+.github
 .gitignore
+.vscode
+.idea
 Dockerfile
 render.yaml
+npm-debug.log
